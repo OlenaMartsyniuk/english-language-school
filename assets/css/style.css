@@ -71,12 +71,12 @@ nav ul {
 #menu li a:hover {
     background-color: #00273D;
     padding: 7px;
+    border-radius: 5px;
 }
 
 .active {
     background-color: #00273D;
     padding: 7px;
-    border-radius: 5px;
 }
 
 header a {
@@ -84,6 +84,7 @@ header a {
     color: #00273D;
     margin: 0;
     padding: 0;
+    border-radius: 5px;
 }
 
 /* Main Content*/
@@ -102,10 +103,10 @@ footer
 
 /*Media query:768px and up*/
 @media screen and (max-width: 768px){
-
 header {
         flex-direction: column;
         align-items: center;
+
     }
 header i {
     /*remove margin from the icon*/
@@ -114,10 +115,9 @@ header i {
 
 nav ul 
 {
-    font-size: 100%;
+    font-size: 120%;
     /*add space between logo and navigation*/
     margin-top: 10px;
-
 }
 
 #logo {
@@ -126,7 +126,7 @@ font-size: 200%;
 }
 }
 
-/*Large devices (laptops and desktips, 992px and up)*/
+/*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
 #menu li a:hover {
     background-color: #00273D;
