@@ -11,9 +11,8 @@ header {
     background-color: #ffffff;
     padding: 0;
     position: fixed;
-    text-decoration: none;
     width: 100%;
-    box-shadow: 0 2px 2px #00273D;
+    box-shadow: 0 1px 3px #00273D;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -22,18 +21,19 @@ header {
 header a {
     text-decoration: none;
     color: #00273D;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 
 /* Adds space between icon and school name*/
-a i {
+header i {
     margin-left: 12px;
+    margin-bottom: 0;
     position: fixed;
 }
 
 /* Navigation menu */
-#nav-menu {
+#menu {
     font-size: 150%;
     list-style-type: none;
     letter-spacing: 0.3rem;
@@ -45,54 +45,28 @@ a i {
     gap: 1.5rem;
 }
 
-#nav-menu li a {
+#menu li a {
     text-decoration: none;
     color: #007BA7;
 
 }
 
-#nav-menu li a:hover {
+#menu li a:hover {
     background-color: #00273D;
-    padding: 8px;
+    padding: 7px;
 }
 
-.selected {
+.active {
     background-color: #00273D;
-    border-bottom: 1px solid #3a3a3a;
+    padding: 7px;
 }
 
 /* School name*/
-#name {
+#logo {
     letter-spacing: 0.1rem;
     font-size: 250%;
     margin-left: 10px;
     color: #007BA7;
 }
 
-/* Media query for tablets */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header a {
-        margin: 10px 0;
-    }
-}
-
-/* Media query for mobile phones */
-@media screen and (max-width: 480px) {
-    header {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 2px 2px #00273D;
-    }
-
-    header a {
-        margin: 10px 0;
-        min-width: 16px;
-    }
-}
+@media screen and (max-idth: 768px)
