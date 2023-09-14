@@ -1,11 +1,93 @@
-header > div
-{
+/*Asterisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-color: #ffffff;
+    padding: 0;
+    position: fixed;
     text-decoration: none;
-    color: #00273D
+    width: 100%;
+    box-shadow: 0 2px 2px #00273D;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-header i
-{
-    color: #00273D
+header a {
+    text-decoration: none;
+    color: #00273D;
+    margin: 0;
+    padding: 0;
 }
 
+/* Adds space between icon and school name*/
+a i {
+    margin-left: 12px;
+    position: fixed;
+}
+
+/* Navigation menu */
+#nav-menu {
+    font-size: 150%;
+    list-style-type: none;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: #007BA7;
+
+}
+
+#nav-menu li a:hover {
+    background-color: #00273D;
+    padding: 8px;
+}
+
+/* School name*/
+#name {
+    letter-spacing: 0.1rem;
+    font-size: 250%;
+    margin-left: 10px;
+    color: #007BA7;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        margin: 10px 0;
+    }
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 2px #00273D;
+    }
+
+    header a {
+        margin: 10px 0;
+        min-width: 16px;
+    }
+}
