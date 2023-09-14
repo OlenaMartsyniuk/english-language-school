@@ -94,11 +94,27 @@ main {
     margin-top: 68px;
     background: #ffffff;
 }
-
+/* Footer */
 footer
 {
     background: #007BA7;
     font-family: 'Cormorant Garamond', serif;
+}
+
+#social-media
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#social-media i{
+    font-size: 180%;
+    padding: 5px;
+    color: #ffffff;
+
 }
 
 /*Media query:768px and up*/
@@ -125,6 +141,7 @@ nav ul
 font-size: 200%;
 }
 }
+
 
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
