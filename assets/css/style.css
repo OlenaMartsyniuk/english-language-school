@@ -56,6 +56,11 @@ a i {
     padding: 8px;
 }
 
+.selected {
+    background-color: #00273D;
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /* School name*/
 #name {
     letter-spacing: 0.1rem;
