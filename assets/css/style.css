@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /*Asterisk wildcard selector to override default styles added by the browser*/
 * {
     padding: 0;
@@ -5,49 +7,64 @@
     box-sizing: border-box;
 }
 
+/*General styles*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #00273D;
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /* Header */
 
 header {
     background-color: #ffffff;
-    padding: 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
-    box-shadow: 0 1px 3px #00273D;
+    box-shadow: 0 1px 3px #007BA7;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
-    text-decoration: none;
-    color: #00273D;
-    margin: 0;
-    padding: 0;
+/* Logo*/
+#logo {
+    letter-spacing: 0.1rem;
+    font-size: 200%;
+    font-family: 'Cormorant Garamond', serif;
+    margin-left: 10px;
+    color: #007BA7;
+    padding: 0 10px;
 }
 
-/* Adds space between icon and school name*/
 header i {
     margin-left: 12px;
     margin-bottom: 0;
     position: fixed;
+    font-size: 1.5rem;
 }
 
 /* Navigation menu */
 nav ul {
-    font-size: 150%;
+    font-size: 120%;
+    font-family: 'Cormorant Garamond', serif;
     list-style-type: none;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     font-weight: 800;
     margin-right: 10px;
     padding: 5px;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 #menu li a {
     text-decoration: none;
     color: #007BA7;
+    padding: 7;
 
 }
 
@@ -59,24 +76,69 @@ nav ul {
 .active {
     background-color: #00273D;
     padding: 7px;
+    border-radius: 5px;
 }
 
-/* School name*/
-#logo {
-    letter-spacing: 0.1rem;
-    font-size: 250%;
-    margin-left: 10px;
-    color: #007BA7;
+header a {
+    text-decoration: none;
+    color: #00273D;
+    margin: 0;
+    padding: 0;
 }
 
-/*Media query:576px and up*/
-@media screen and (min-width: 320px) {
-nav ul
+/* Main Content*/
+
+main {
+    flex: 1 0 auto;
+    margin-top: 68px;
+    background: #ffffff;
+}
+
+footer
 {
-    flex-direction: row;
-}
-    
+    background: #007BA7;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+/*Media query:768px and up*/
+@media screen and (max-width: 768px){
 
-@media screen and (max-idth: 768px)
+header {
+        flex-direction: column;
+        align-items: center;
+    }
+header i {
+    /*remove margin from the icon*/
+    margin-left: 0; 
+}
+
+nav ul 
+{
+    font-size: 100%;
+    /*add space between logo and navigation*/
+    margin-top: 10px;
+
+}
+
+#logo {
+    /*reduce font size for the school name*/
+font-size: 200%;
+}
+}
+
+/*Large devices (laptops and desktips, 992px and up)*/
+@media screen and (min-width: 992px) {
+#menu li a:hover {
+    background-color: #00273D;
+    padding: 0;
+}
+nav ul {
+    font-size: 150%;
+    padding: 0;
+    margin-right: 20px;
+}
+#logo
+{
+    font-size: 250%;
+}
+}
