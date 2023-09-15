@@ -96,12 +96,40 @@ main {
     margin-top: 68px;
     background: #00273D;
 }
+
+/*Cover Image*/
+#cover-image
+{
+    background-color: #00273D;
+    background-image: url('../css/images/cover-image.png');
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+#cover-text
+{
+    background-color: rgba(0, 123, 167, .7);
+    font-size: 200%;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5rem;
+    bottom: 150px;
+}
+
 /* Footer */
 
 footer
 {
-    background-color: #007BA7;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #007BA7;
     padding: 40px 0;
     font-size: 1rem;
 }
@@ -137,7 +165,7 @@ margin-right: 20px;
 }
   
 #social-media a {
-    color:#ffffff;
+    color: #007BA7;
     font-size: 24px;
     text-decoration: none;
 }
@@ -151,7 +179,7 @@ margin-right: 20px;
 
 .footer-navigation a
 {
-    color: #ffffff;
+    color: #007BA7;
     text-decoration: none;
 }
 
