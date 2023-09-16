@@ -97,38 +97,64 @@ main {
     background: #ffffff;
 }
 
-#container-info {
-    max-width: 1500px;
-    margin: 0 auto;
+
+/* Style the "why" section */
+#whys h3
+{
+    text-align: center;
+    font-size: 30px;
+    color: #00273D;
+    margin: 5px 0;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.p-main {
+    /* Three columns, with some spacing */
+    margin: 10px;
     padding: 20px;
+    border: 1px solid #00273D;
+    text-align: center;
+    background-color: #F9F0DF;
+}
+
+/* Style for the icons */
+.p-main i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00273D;
+}
+
+/* Style for the headings */
+.p-main h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #00273D;
+    text-align: center;
+}
+
+/* Style for the paragraphs */
+.p-main p {
+    font-size: 20px;
+    color: #00273D;
 }
 
 /* Style the "About us" section */
 #about {
     background-color: #ffffff;
-    padding: 20px;
-    margin: 50px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 300px;
+    min-height: 500px;
 }
 
-#about h3 {
-    color: #00273D;
-    font-size: 45px;
-    text-transform: uppercase;
-    width: 20%;
-    margin-bottom: 35px;
-}
-
-#mission p {
+#about-text p {
     color: #00273D;
     font-size: 20px;
     margin: 0 60px;
+    text-align: center;
 }
+
 
 /*Cover Image*/
 #cover-image
@@ -136,7 +162,7 @@ main {
     background-color: #00273D;
     background-image: url('../css/images/cover-image.png');
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -155,7 +181,8 @@ main {
     justify-content: center;
     align-items: center;
     letter-spacing: 0.5rem;
-    bottom: 150px;
+    bottom: 200px;
+    text-transform: uppercase;
 }
 
 /* Footer */
